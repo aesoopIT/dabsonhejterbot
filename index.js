@@ -10,7 +10,7 @@ const { readdirSync, realpathSync } = require('fs');
 
 const { join } = require('path');
 
-//const config = require('./config.json');
+const config = require('./config.json');
 client.config = config;
 
 const guild = client.guilds.cache.get("389514334943838208");
