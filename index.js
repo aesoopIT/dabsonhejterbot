@@ -10,8 +10,8 @@ const { readdirSync, realpathSync } = require('fs');
 
 const { join } = require('path');
 
-const config = require('./config.json');
-client.config = config;
+//const config = require('./config.json');
+//client.config = config;
 
 const guild = client.guilds.cache.get("389514334943838208");
 
@@ -326,4 +326,4 @@ client.on("message", async(message) => {
     }
 })
 
-client.login(token);
+client.login(process.env.DB_TOKEN);
