@@ -85,7 +85,9 @@ client.on("message", async message => {
         message.channel.send("<:komodohype:798193051792179200>");
         message.channel.send("<:komodohype:798193051792179200>");
         message.channel.send("<:komodohype:798193051792179200>");
-    } 
+    } else if (messag.content === ('komodo')) {
+        message.react('<:komodohype:798193051792179200>');
+    }
 
 
     if(message.author.bot) return;
@@ -132,9 +134,7 @@ client.on('message', msg => {
         msg.reply('no ty kurwiszonie');
     } else if (msg.content == ('dawac' || 'Dawac')) {
         msg.channel.send("@everyone\n\n" + " Wbijać pedały <:angery:798884551422115891><:Dansgame:798296354752430080>");
-    } else if (msg.content === ('komodo')) {
-        message.react('<:komodohype:798193051792179200>');
-    }
+    } 
 });
 
 
