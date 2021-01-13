@@ -10,7 +10,7 @@ module.exports = {
         //Sort your commands into categories, and make seperate embeds for each category
 
         const moderation = new Discord.MessageEmbed()
-        .setTitle('Moderation')
+        .setTitle('Commands with .')
         .addField('`.clear`', 'Myjesz Brud')
         .addField('`.calculate`', 'Policz policz, bo na paluszkach nie potrafisz')
         .addField('`.covid`', 'Track the amount of COVID-19 cases')
@@ -24,7 +24,7 @@ module.exports = {
         .setTimestamp()
 
         const fun = new Discord.MessageEmbed()
-        .setTitle('BEZ KROPKI')
+        .setTitle('BEZ KROPKI KURWA NIE DAWAJ KROPI')
         .addField('`j`', 'Jebiesz DIsa')
         .addField('`komodo`', 'KOMODOHYPE')
         .addField('`damian`', 'Jebiesz damiana')
@@ -41,7 +41,7 @@ module.exports = {
         .setTimestamp()
 
         const DabsonHejter = new Discord.MessageEmbed()
-        .setTitle('Dabson Hejter')
+        .setTitle('Dabson Hejter MusicBOT')
         .addField('`.play`', 'Start muzyczki')
         .addField('`.stop`', 'e')
         .addField('`.skip`', 'e')
