@@ -108,7 +108,7 @@ client.on("message", async message => {
 
 // Jebanie disa
 client.on('message', msg => {
-    if (msg.content.toLowerCase().startsWith( 'j' )) {
+    if (msg.content === ('j', 'J')) {
         msg.reply("JD kurwe");
     } else if (msg.content.toLowerCase().startsWith('liga')) {
         msg.channel.send("@everyone\n\n" + " dawac na lige<:komodohype:798193051792179200>");
