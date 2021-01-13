@@ -20,7 +20,7 @@ const guild = client.guilds.cache.get("389514334943838208");
 const { GiveawaysManager } = require('discord-giveaways');
 const { i } = require('mathjs');
 client.giveawaysManager = new GiveawaysManager(client, {
-    storage: "./giveaways.json",
+    storage: "/giveaways.json",
     updateCountdownEvery: 5000,
     default: {
         botsCanWin: config.botsCanWin,
@@ -108,7 +108,7 @@ client.on("message", async message => {
 
 // Jebanie disa
 client.on('message', msg => {
-    if (msg.content === ('j', 'J')) {
+    if (msg.content === ('j' + 'J')) {
         msg.reply("JD kurwe");
     } else if (msg.content.toLowerCase().startsWith('liga')) {
         msg.channel.send("@everyone\n\n" + " dawac na lige<:komodohype:798193051792179200>");
