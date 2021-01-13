@@ -20,7 +20,7 @@ const guild = client.guilds.cache.get("389514334943838208");
 const { GiveawaysManager } = require('discord-giveaways');
 const { i } = require('mathjs');
 client.giveawaysManager = new GiveawaysManager(client, {
-    storage: "/giveaways.json",
+    storage: "./giveaways.json",
     updateCountdownEvery: 5000,
     default: {
         botsCanWin: config.botsCanWin,
