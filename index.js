@@ -85,9 +85,7 @@ client.on("message", async message => {
         message.channel.send("<:komodohype:798193051792179200>");
         message.channel.send("<:komodohype:798193051792179200>");
         message.channel.send("<:komodohype:798193051792179200>");
-    } else if (message.content === ('komodo')) {
-        message.react('<:komodohype:798193051792179200>');
-    }
+    } 
 
 
     if(message.author.bot) return;
