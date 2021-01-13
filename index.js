@@ -129,9 +129,7 @@ client.on('message', msg => {
         msg.channel.send("rararara");
     } else if (msg.content === ('kto ty')) {
         msg.channel.send(firstName + lastName);
-    }  else if (msg.content === (komodo)) {
-        msg.channel.send(komodo);
-    }
+    }  
 });
 
 
