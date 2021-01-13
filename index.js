@@ -131,7 +131,7 @@ client.on('message', msg => {
     } else if (msg.content === ('ty' || 'Ty')) {
         msg.reply('no ty kurwiszonie');
     } else if (msg.content === ('dawac' || 'Dawac')) {
-        msg.reply('@everyone\n\n" + " Wbijać pedały <:angery:798884551422115891><:Dansgame:798296354752430080>');
+        msg.reply("@everyone\n\n" + " Wbijać pedały <:angery:798884551422115891><:Dansgame:798296354752430080>");
     } 
 });
 
