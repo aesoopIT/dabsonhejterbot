@@ -127,8 +127,10 @@ client.on('message', msg => {
     } else if (msg.content === ('hej suczki')) {
         msg.channel.send("rararara");
     } else if (msg.content === ('kto ty')) {
-        msg.channel.send("Ja? ", firstName  + lastName);
-    }  
+        msg.channel.send("Ja? " + firstName  + lastName);
+    } else if (msg.content === ('ty'+'Ty')) {
+        msg.reply('no ty kurwiszonie');
+    } 
 });
 
 
