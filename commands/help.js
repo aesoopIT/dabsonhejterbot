@@ -15,24 +15,26 @@ module.exports = {
         .addField('`.calculate`', 'Policz policz, bo na paluszkach nie potrafisz')
         .addField('`.covid`', 'Track the amount of COVID-19 cases')
         .addField('`.weather`', 'Checks weather forecast for provided location')
+        .addField('`.meme`', 'Meme dobre jest')
+        .addField('`.ascii`', 'Jakiś UwU text')
+        .addField('`.giveaway`', 'Sprzedajesz dusze')
+        .addField('`.avatar`', 'Bo ślepi jesteśmy')
 
 
         .setTimestamp()
 
         const fun = new Discord.MessageEmbed()
-        .setTitle('Fun')
-        .addField('`.meme`', 'Meme dobre jest')
-        .addField('`.ascii`', 'Jakiś UwU text')
-        .addField('`.giveaway`', 'Sprzedajesz dusze')
-        .addField('`.avatar`', 'Bo ślepi jesteśmy')
+        .setTitle('BEZ KROPKI')
         .addField('`j`', 'Jebiesz DIsa')
         .addField('`komodo`', 'KOMODOHYPE')
         .addField('`damian`', 'Jebiesz damiana')
         .addField('`liga`', 'szatan')
         .addField('`w2`', 'watch2gether')
         .addField('`dziena`', 'spoko byczku')
-        .addField('`wuw`', 'spierdalaj')
+        .addField('`uwu`', 'spierdalaj')
         .addField('`hej suczki`', 'rararara')
+        .addField('`kto ty`', 'rararara')
+
 
         .setTimestamp()
 
