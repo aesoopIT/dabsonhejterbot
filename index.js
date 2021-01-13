@@ -114,7 +114,7 @@ client.on('message', msg => {
         msg.reply("JD kurwe");
     } else if (msg.content.toLowerCase().startsWith('liga')) {
         msg.channel.send("@everyone\n\n" + " dawac na lige<:komodohype:798193051792179200>");
-    } else if (msg.content === ('damian')) {
+    } else if (msg.content === ('damian'||'Damian')) {
         msg.channel.send("Damiana dawaj <:biblethump:798295427836936222>");
     } else if (msg.content === ('w2')) {
         msg.channel.send("https://www.watch2gether.com/rooms/jd-cues1vvoemz4p3twl5?lang=pl");
@@ -128,8 +128,10 @@ client.on('message', msg => {
         msg.channel.send("rararara");
     } else if (msg.content === ('kto ty')) {
         msg.channel.send("Ja? " + firstName  + lastName);
-    } else if (msg.content === ('ty'+'Ty')) {
+    } else if (msg.content === ('ty' || 'Ty')) {
         msg.reply('no ty kurwiszonie');
+    } else if (msg.content === ('dawac' || 'Dawac')) {
+        msg.reply('@everyone\n\n" + " Wbijać pedały <:angery:798884551422115891><:Dansgame:798296354752430080>');
     } 
 });
 
