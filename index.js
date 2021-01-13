@@ -17,7 +17,6 @@ const guild = client.guilds.cache.get("389514334943838208");
 
 var firstName = "Dabson";
 var lastName = "Hejter";
-var komodo = "<:komodohype:798193051792179200>";
 
 // Init discord giveaways
 const { GiveawaysManager } = require('discord-giveaways');
