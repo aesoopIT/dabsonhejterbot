@@ -128,9 +128,9 @@ client.on('message', msg => {
         msg.channel.send("rararara");
     } else if (msg.content === ('kto ty')) {
         msg.channel.send("Ja? " + firstName  + lastName);
-    } else if (msg.content === ('ty' || 'Ty')) {
+    } else if (msg.content == ('ty' || 'Ty')) {
         msg.reply('no ty kurwiszonie');
-    } else if (msg.content === ('dawac' || 'Dawac')) {
+    } else if (msg.content == ('dawac' || 'Dawac')) {
         msg.reply("@everyone\n\n" + " Wbijać pedały <:angery:798884551422115891><:Dansgame:798296354752430080>");
     } 
 });
