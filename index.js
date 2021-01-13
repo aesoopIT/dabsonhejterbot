@@ -132,7 +132,7 @@ client.on('message', msg => {
         msg.reply('no ty kurwiszonie');
     } else if (msg.content == ('dawac' || 'Dawac')) {
         msg.channel.send("@everyone\n\n" + " Wbijać pedały <:angery:798884551422115891><:Dansgame:798296354752430080>");
-    } else if (msg.content === '<:komodohype:798193051792179200>') {
+    } else if (msg.content === ('<:komodohype:798193051792179200>')) {
         message.react('<:komodohype:798193051792179200>');
     }
 });
