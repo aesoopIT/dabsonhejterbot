@@ -33,7 +33,9 @@ module.exports = {
         .addField('`dziena`', 'spoko byczku')
         .addField('`uwu`', 'spierdalaj')
         .addField('`hej suczki`', 'rararara')
-        .addField('`kto ty`', 'rararara')
+        .addField('`kto ty`', 'no')
+        .addField('`ty`', 'tak ty')
+        .addField('`dawac`', 'wbijac')
 
 
         .setTimestamp()
