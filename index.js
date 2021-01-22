@@ -85,15 +85,7 @@ client.on("message", async message => {
         message.channel.send("<:komodohype:798193051792179200>");
         message.channel.send("<:komodohype:798193051792179200>");
         message.channel.send("<:komodohype:798193051792179200>");
-    } else if (message.content == ('.wellerman')) {
-        message.channel.send(".play https://www.youtube.com/watch?v=-KO7cofMJH0&ab_channel=TheLongestJohns-Topic")
-        let result = await searcher.search(args.join(" "), { type: "video" }) 
-        const songInfo = await ytdl.getInfo(result.first.url)
-
-        let song = {
-            title: songInfo.videoDetails.title,
-            url: songInfo.videoDetails.video_url
-    }};
+    }
 
 
     if(message.author.bot) return;
@@ -140,9 +132,7 @@ client.on('message', msg => {
         msg.reply('no ty kurwiszonie');
     } else if (msg.content == ('dawac' || 'Dawac')) {
         msg.channel.send("@everyone\n\n" + " Wbijać pedały <:angery:798884551422115891><:Dansgame:798296354752430080>");
-    } else if (msg.content == ('..wellerman')) {
-        msg.channel.send(".play https://www.youtube.com/watch?v=-KO7cofMJH0&ab_channel=TheLongestJohns-Topic");
-    }
+    } 
 });
 
 
