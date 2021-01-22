@@ -133,8 +133,14 @@ client.on('message', msg => {
     } else if (msg.content == ('dawac' || 'Dawac')) {
         msg.channel.send("@everyone\n\n" + " Wbijać pedały <:angery:798884551422115891><:Dansgame:798296354752430080>");
     } else if (msg.content == ('.wellerman')) {
-        msg.channel.send(".skip"+".play https://www.youtube.com/watch?v=-KO7cofMJH0&ab_channel=TheLongestJohns-Topic");
-    } 
+        msg.channel.send(".play https://www.youtube.com/watch?v=-KO7cofMJH0&ab_channel=TheLongestJohns-Topic")
+        let result = await searcher.search(args.join(" "), { type: "video" }) 
+        const songInfo = await ytdl.getInfo(result.first.url)
+
+        let song = {
+            title: songInfo.videoDetails.title,
+            url: songInfo.videoDetails.video_url
+    }};
 });
 
 
@@ -159,6 +165,7 @@ const searcher = new YTSearcher({
 
 
 const queue = new Map();
+
 
 
 client.on("message", async(message) => {
