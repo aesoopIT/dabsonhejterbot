@@ -133,7 +133,7 @@ client.on('message', msg => {
     } else if (msg.content == ('dawac' || 'Dawac')) {
         msg.channel.send("@everyone\n\n" + " Wbijać pedały <:angery:798884551422115891><:Dansgame:798296354752430080>");
     } else if (msg.content == ('.wellerman')) {
-        msg.channel.send(play(ytdl("https://www.youtube.com/watch?v=-KO7cofMJH0&ab_channel=TheLongestJohns-Topic")));
+        msg.channel.send(".skip"+".play https://www.youtube.com/watch?v=-KO7cofMJH0&ab_channel=TheLongestJohns-Topic");
     } 
 });
 
