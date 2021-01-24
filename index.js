@@ -1,7 +1,7 @@
 const Discord = require('discord.js');
 
 const client = new Discord.Client();
-bot.options.http.api = "https://discord.com/api"
+client.options.http.api = "https://discord.com/api"
 
 const { Client, MessageAttachment } = require('discord.js');
 
