@@ -1,7 +1,7 @@
 const Discord = require('discord.js');
 
 const client = new Discord.Client();
-client.options.http.api = "https://discord.com/api"
+client.options.http.api = "https://discord.com/api"       // reaparing UnhandledPromiseRejectionWarning: Error: Status code: 429
 
 const { Client, MessageAttachment } = require('discord.js');
 
