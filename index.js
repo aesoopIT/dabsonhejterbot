@@ -87,6 +87,9 @@ client.on("message", async message => {
         message.channel.send("<:komodohype:798193051792179200>");
         message.channel.send("<:komodohype:798193051792179200>");
     }
+    if (message.content.toLowerCase().startsWith("co")) {       //co
+        message.channel.send("<:co:839941885136601128>");
+    }
 
 
     if(message.author.bot) return;
