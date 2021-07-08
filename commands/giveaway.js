@@ -1,3 +1,6 @@
+/*
+OUTDATED
+
 const ms = require('ms');
 
 module.exports = {
@@ -52,5 +55,5 @@ module.exports = {
 
         message.channel.send(`Giveaway starting in ${channel}`);
     }
-}
+}  */
 
