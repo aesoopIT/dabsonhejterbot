@@ -9,4 +9,4 @@ module.exports = {
         await message.channel.send('Leaving channel <:gagawombat:488763670180921344>')
  
     }
-}
+} 

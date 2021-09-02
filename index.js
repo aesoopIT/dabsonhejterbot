@@ -293,7 +293,7 @@ client.on("message", async(message) => {
             return message.channel.send("The song is already playing!");
         serverQueue.connection.dispatcher.resume();
         message.channel.send("The song has been resumed!");
-    }
+    } 
     function Loop(args, serverQueue){
         if(!serverQueue.connection)
             return message.channel.send("There is no music currently playing!");
