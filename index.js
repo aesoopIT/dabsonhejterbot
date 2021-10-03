@@ -112,7 +112,7 @@ client.on("message", async message => {
     }
 });
 
-// Jebanie disa
+// Jebanie disa   d 
 client.on('message', msg => {
     if (msg.content === ('j' + 'J')) {
         msg.reply("JD kurwe");
@@ -124,7 +124,7 @@ client.on('message', msg => {
         msg.channel.send("https://www.watch2gether.com/rooms/jd-cues1vvoemz4p3twl5?lang=pl");
     } else if (msg.content === ('dziena')) {
         msg.channel.send("spoko byku :sunglasses: :call_me:");
-    } else if (msg.content === ('uwu')) {
+    } else if (msg.content.includes ('uwu')) {
         msg.channel.send("NO WYPIERDALAJ Z TYM SYFEM");
         const attachment = new MessageAttachment('https://cdn.discordapp.com/attachments/389514334943838210/798307138635563068/2021-01-11_at_22-47-25.png');
         msg.channel.send(attachment);
