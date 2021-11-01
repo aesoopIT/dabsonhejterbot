@@ -136,7 +136,9 @@ client.on('message', msg => {
         msg.reply('no ty kurwiszonie');
     } else if (msg.content == ('dawac' || 'Dawac')) {
         msg.channel.send("@everyone\n\n" + " Wbijać pedały <:angery:798884551422115891><:Dansgame:798296354752430080>");
-    } 
+    } else if (msg.content.includes ("kk")) {
+        msg.reply("UWAGA PEDAŁ!! ON króci ok, pomocy prosze <:biblethump:798295427836936222>")
+    }
 });
 
 

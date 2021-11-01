@@ -7,17 +7,17 @@ module.exports = {
 
     async run (client, message, args){
 
-        //Sort your commands into categories, and make seperate embeds for each category
+        
 
         const moderation = new Discord.MessageEmbed()
         .setTitle('Commands with .')
         .addField('`.clear`', 'Myjesz Brud')
         .addField('`.calculate`', 'Policz policz, bo na paluszkach nie potrafisz')
-        .addField('`.covid`', 'Track the amount of COVID-19 cases')
+        //.addField('`.covid`', 'Track the amount of COVID-19 cases')
         .addField('`.weather`', 'Checks weather forecast for provided location')
         .addField('`.meme`', 'Meme dobre jest')
         .addField('`.ascii`', 'Jakiś UwU text')
-        .addField('`.giveaway`', 'Sprzedajesz dusze')
+        //.addField('`.giveaway`', 'Sprzedajesz dusze')
         .addField('`.avatar`', 'Bo ślepi jesteśmy')
 
 
@@ -36,6 +36,7 @@ module.exports = {
         .addField('`kto ty`', 'no')
         .addField('`ty`', 'tak ty')
         .addField('`dawac`', 'wbijac')
+        .addField('`kk`', 'sadeg')
 
 
 
