@@ -37,6 +37,7 @@ module.exports = {
         .addField('`ty`', 'tak ty')
         .addField('`dawac`', 'wbijac')
         .addField('`kk`', 'sadeg')
+        .addField('`mc`', 'sadeg')
 
 
 
