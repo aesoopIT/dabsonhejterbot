@@ -116,8 +116,10 @@ client.on("message", async message => {
 client.on('message', msg => {
     if (msg.content === ('j' + 'J')) {
         msg.reply("JD kurwe");
-    } else if (msg.content.toLowerCase().startsWith('liga')) {
+    } else if (msg.content.includes ('liga')) {
         msg.channel.send("@everyone\n\n" + " dawac na lige<:komodohype:798193051792179200>");
+        /* } else if (msg.content.toLowerCase().startsWith('liga')) {
+        msg.channel.send("@everyone\n\n" + " dawac na lige<:komodohype:798193051792179200>"); */
     } else if (msg.content === ('damian'||'Damian')) {
         msg.channel.send("Damiana dawaj <:biblethump:798295427836936222>");
     } else if (msg.content === ('w2')) {
@@ -137,8 +139,9 @@ client.on('message', msg => {
     } else if (msg.content == ('dawac' || 'Dawac')) {
         msg.channel.send("@everyone\n\n" + " Wbijać pedały <:angery:798884551422115891><:Dansgame:798296354752430080>");
     } else if (msg.content.includes ("kk")) {
-        msg.reply("UWAGA PEDAŁ!! ON króci ok, pomocy prosze <:biblethump:798295427836936222>")
-    }
+        msg.reply("jestem z ciebie rozczarowany <:biblethump:798295427836936222>")
+    } else if (msg.content == ('mc')) {
+        msg.reply("@everyone\n\n" + "wbijamy na jakiegoś minecrafta ten tegos <:coco:919917662149156885>");
 });
 
 
