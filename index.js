@@ -32,7 +32,7 @@ client.giveawaysManager = new GiveawaysManager(client, {
         reaction: config.reaction
     }
 });
-// We now have a client.giveawaysManager property to manage our giveaways! 
+// We n ow have a client.giveawaysManager property to manage our giveaways! 
 
 client.giveawaysManager.on("giveawayReactionAdded", (giveaway, member, reaction) => {
     console.log(`${member.user.tag} entered giveaway #${giveaway.messageID} (${reaction.emoji.name})`);
