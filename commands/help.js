@@ -36,8 +36,16 @@ module.exports = {
         .addField('`kto ty`', 'no')
         .addField('`ty`', 'tak ty')
         .addField('`dawac`', 'wbijac')
+        .addField('`mc`', 'mcnota')
+        .addField('`urodziny`', '12.01.2021')
+        .addField('`sto lat`', 'yez')
+        .addField('``', '')
+        .addField('``', '')
+
+
         .addField('`kk`', 'sadeg')
-        .addField('`mc`', 'sadeg')
+
+
 
 
 

@@ -19,6 +19,7 @@ const guild = client.guilds.cache.get("389514334943838208");
 var firstName = "Dabson";
 var lastName = "Hejter";
 
+/*
 // Init discord giveaways
 const { GiveawaysManager } = require('discord-giveaways');
 const { i } = require('mathjs');
@@ -32,7 +33,7 @@ client.giveawaysManager = new GiveawaysManager(client, {
         reaction: config.reaction
     }
 });
-// We n ow have a client.giveawaysManager property to manage our giveaways! 
+// We now have a client.giveawaysManager property to manage our giveaways! 
 
 client.giveawaysManager.on("giveawayReactionAdded", (giveaway, member, reaction) => {
     console.log(`${member.user.tag} entered giveaway #${giveaway.messageID} (${reaction.emoji.name})`);
@@ -40,7 +41,8 @@ client.giveawaysManager.on("giveawayReactionAdded", (giveaway, member, reaction)
 
 client.giveawaysManager.on("giveawayReactionRemoved", (giveaway, member, reaction) => {
     console.log(`${member.user.tag} unreact to giveaway #${giveaway.messageID} (${reaction.emoji.name})`);
-}); 
+});
+*/
 
 
 
@@ -139,7 +141,11 @@ client.on('message', msg => {
     } else if (msg.content == ('dawac' || 'Dawac')) {
         msg.channel.send("@everyone\n\n" + " Wbijać pedały <:angery:798884551422115891><:Dansgame:798296354752430080>");
     } else if (msg.content == ('mc')) {
-        msg.reply("@everyone\n\n" + "wbijamy na jakiegoś minecrafta ten tegos <:coco:919917662149156885>");
+        msg.channel.send("@everyone\n\n" + "wbijamy na jakiegoś minecrafta <:co:839941716189773844>");
+    } else if (msg.content == ('urodziny')) {
+        msg.channel.send("@Michal" + "ten szef mnie stworzył 12.01.2021, prosze mi pogratulować na urodziny bo będę smutny <:Dansgame:798296354752430080>");
+    } else if (msg.content == ('sto lat')) {
+        msg.reply("dziękuje ci bardzo miły człowieku UwU ^.^");
     } else if (msg.content.includes ("kk")) {
         msg.reply("jestem z ciebie rozczarowany <:biblethump:798295427836936222>")
     }
