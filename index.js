@@ -122,7 +122,7 @@ client.on("message", async message => {
 // Jebanie disa   d 
 client.on('message', msg => {
 
-    let args = msg.content.substring(PREFIX.length).split(" ")
+    let args = msg.content.substring(prefix.length).split(" ")
     let person = msg.guild.member(msg.mentions.users.first() || msg.guild.members.fetch(args[1]))
 
     if (msg.content.toLowerCase().startsWith('j')) {
