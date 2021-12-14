@@ -171,25 +171,13 @@ client.on('message', msg => {
         msg.reply("jestem z ciebie rozczarowany <:biblethump:798295427836936222>")
     } 
 
-    if (msg.mentions.members.first()) {
-        msg.channel.send( "  ty chuju");
+    /* if (msg.mentions.members.first()) {
+        msg.channel.send( "  ty chuju"); 
 
      
 
-    }
+    }  */
 
-    let filter = msg => {
-        return msg.content.toLowerCase() == msg.content.toLowerCase() && // check if the content is the same (sort of)
-               msg.author == msg.author; // check if the author is the same
-      }
-    
-      msg.channel.awaitMessages(filter, {
-        maxMatches: 1, // you only need that to happen once
-        time: 5 * 1000 // time is in milliseconds
-      }).then(collected => {
-        // this function will be called when a message matches you filter
-      }).catch(console.error);
-    
 
         
 
