@@ -94,6 +94,7 @@ client.on("message", async message => {
     }  else if (message.content.toLowerCase().startsWith ('władysław')) {
         message.channel.send("<:monkaS:810296326557270046> <:monkaS:810296326557270046>");
         const attachment = new MessageAttachment('https://cdn.discordapp.com/attachments/389514334943838210/920316620453314601/uwusiowo.png');
+        const attachment = new MessageAttachment('https://cdn.discordapp.com/attachments/389514334943838210/920316620453314601/uwusiowo.png');
     }
 
 
