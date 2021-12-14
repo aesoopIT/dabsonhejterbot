@@ -146,6 +146,11 @@ client.on('message', msg => {
         msg.channel.send("@Michal" + "ten szef mnie stworzył 12.01.2021, prosze mi pogratulować na urodziny bo będę smutny <:Dansgame:798296354752430080>");
     } else if (msg.content == ('sto lat')) {
         msg.reply("dziękuje ci bardzo miły człowieku UwU ^.^");
+    } else if (msg.content == ('władysław')) {
+        msg.channel.send("<:monkaS:920312586199789570><:monkaS:920312586199789570>");
+        const attachment = new MessageAttachment('https://cdn.discordapp.com/attachments/389514334943838210/920311693219880990/unknown.png');
+    } else if (msg.content == ('brek')) {
+        const attachment = new MessageAttachment('https://cdn.discordapp.com/attachments/389514334943838210/920312845009305681/2x_2.gif');
     } else if (msg.content.includes ("kk")) {
         msg.reply("jestem z ciebie rozczarowany <:biblethump:798295427836936222>")
     }
