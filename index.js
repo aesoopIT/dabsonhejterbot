@@ -94,6 +94,7 @@ client.on("message", async message => {
     }  else if (message.content.toLowerCase().startsWith ('władysław')) {
         message.channel.send("<:monkaS:810296326557270046> <:monkaS:810296326557270046>");
         const attachment2 = new MessageAttachment('https://cdn.discordapp.com/attachments/389514334943838210/920316620453314601/uwusiowo.png');
+        message.channel.send(attachment2);
     }
 
 
@@ -152,6 +153,7 @@ client.on('message', msg => {
         msg.reply("dziękuje ci bardzo miły człowieku UwU ^.^");
     } else if (msg.content == ('brek')) {
         const attachment3 = new MessageAttachment('https://cdn.discordapp.com/attachments/389514334943838210/920312845009305681/2x_2.gif');
+        msg.channel.send(attachment3);
     } else if (msg.content.includes ("kk")) {
         msg.reply("jestem z ciebie rozczarowany <:biblethump:798295427836936222>")
     }
