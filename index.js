@@ -126,6 +126,8 @@ client.on('message', msg => {
     let person = msg.guild.member(msg.mentions.users.first() || msg.guild.members.fetch(args[1])) */
     let member = msg.members.mentions.first();
 
+
+    
     if (msg.content.toLowerCase().startsWith('j')) {
         msg.reply("JD kurwe");
     } else if (msg.content.includes ('liga')) {
@@ -160,16 +162,38 @@ client.on('message', msg => {
         const attachment3 = new MessageAttachment('https://cdn.discordapp.com/attachments/389514334943838210/920312845009305681/2x_2.gif');
         msg.channel.send(attachment3);
     } else if (msg.content.toLowerCase().startsWith ('powiedz mi fraszke')) {
-        msg.reply( member.toString() + "  ty chuju");
+        msg.reply( "  ty chuju");
+
+
+     
 
     } else if (msg.content.includes ("kk")) {
         msg.reply("jestem z ciebie rozczarowany <:biblethump:798295427836936222>")
+    } 
+
+    if (msg.mentions.members.first()) {
+        msg.reply( "  ty chuju");
+
+     
+
     }
+
+    let filter = msg => {
+        return msg.content.toLowerCase() == message.content.toLowerCase() && // check if the content is the same (sort of)
+               msg.author == message.author; // check if the author is the same
+      }
+    
+      message.channel.awaitMessages(filter, {
+        maxMatches: 1, // you only need that to happen once
+        time: 5 * 1000 // time is in milliseconds
+      }).then(collected => {
+        // this function will be called when a message matches you filter
+      }).catch(console.error);
+    
+
+        
+
 });
-
-
-
-
 
 
 
