@@ -124,6 +124,7 @@ client.on('message', msg => {
 
     /* let args = msg.content.substring(prefix.length).split(" ")
     let person = msg.guild.member(msg.mentions.users.first() || msg.guild.members.fetch(args[1])) */
+    let user = msg.guild.member
 
     if (msg.content.toLowerCase().startsWith('j')) {
         msg.reply("JD kurwe");
