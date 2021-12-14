@@ -93,8 +93,7 @@ client.on("message", async message => {
         message.channel.send("<:co:839941716189773844>");
     }  else if (message.content.toLowerCase().startsWith ('władysław')) {
         message.channel.send("<:monkaS:810296326557270046> <:monkaS:810296326557270046>");
-        const attachment = new MessageAttachment('https://cdn.discordapp.com/attachments/389514334943838210/920316620453314601/uwusiowo.png');
-        const attachment = new MessageAttachment('https://cdn.discordapp.com/attachments/389514334943838210/920316620453314601/uwusiowo.png');
+        const attachment2 = new MessageAttachment('https://cdn.discordapp.com/attachments/389514334943838210/920316620453314601/uwusiowo.png');
     }
 
 
@@ -152,7 +151,7 @@ client.on('message', msg => {
     } else if (msg.content == ('sto lat')) {
         msg.reply("dziękuje ci bardzo miły człowieku UwU ^.^");
     } else if (msg.content == ('brek')) {
-        const attachment = new MessageAttachment('https://cdn.discordapp.com/attachments/389514334943838210/920312845009305681/2x_2.gif');
+        const attachment3 = new MessageAttachment('https://cdn.discordapp.com/attachments/389514334943838210/920312845009305681/2x_2.gif');
     } else if (msg.content.includes ("kk")) {
         msg.reply("jestem z ciebie rozczarowany <:biblethump:798295427836936222>")
     }
