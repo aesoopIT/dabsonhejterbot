@@ -124,7 +124,7 @@ client.on('message', msg => {
 
     /* let args = msg.content.substring(prefix.length).split(" ")
     let person = msg.guild.member(msg.mentions.users.first() || msg.guild.members.fetch(args[1])) */
-    let user = msg.guild.member
+    let member = msg.guild.member.first();
 
     if (msg.content.toLowerCase().startsWith('j')) {
         msg.reply("JD kurwe");
@@ -160,7 +160,7 @@ client.on('message', msg => {
         const attachment3 = new MessageAttachment('https://cdn.discordapp.com/attachments/389514334943838210/920312845009305681/2x_2.gif');
         msg.channel.send(attachment3);
     } else if (msg.content.toLowerCase().startsWith ('powiedz mi fraszke')) {
-        msg.reply( user.toString() + "  ty chuju");
+        msg.reply( member.toString() + "  ty chuju");
 
     } else if (msg.content.includes ("kk")) {
         msg.reply("jestem z ciebie rozczarowany <:biblethump:798295427836936222>")
