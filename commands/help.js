@@ -69,7 +69,7 @@ module.exports = {
                 DabsonHejter
         ]
 
-        const emojiList = ["⏪", "⏩"];
+        const emojiList = ["<:Sadeg:897588207015850054>", "<:biblethump:798295427836936222>"];              // ["⏪", "⏩"];
 
         const timeout = '120000';
 
