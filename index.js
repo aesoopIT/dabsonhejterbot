@@ -172,7 +172,7 @@ client.on('message', msg => {
     } 
 
     if (msg.mentions.members.first()) {
-        msg.reply( "  ty chuju");
+        msg.channel.send( "  ty chuju");
 
      
 
