@@ -40,7 +40,7 @@ module.exports = {
         .addField('`urodziny`', '12.01.2021')
         .addField('`sto lat`', 'yez')
         .addField('`władysław`', 'uwusiowo')
-        .addField('`brek`', 'wiesz co')
+        .addField('`widzisz mnie`', 'wiesz co')
 
 
         .addField('`kk`', 'sadeg')

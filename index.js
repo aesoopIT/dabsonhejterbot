@@ -93,7 +93,7 @@ client.on("message", async message => {
         message.channel.send("<:co:839941716189773844>");
     }  else if (message.content.toLowerCase().startsWith ('władysław')) {
         message.channel.send("<:monkaS:810296326557270046> <:monkaS:810296326557270046>");
-        const attachment2 = new MessageAttachment('https://cdn.discordapp.com/attachments/389514334943838210/920316620453314601/uwusiowo.png');
+        const attachment2 = new MessageAttachment('https://cdn.discordapp.com/attachments/389514334943838210/920311693219880990/unknown.png');
         message.channel.send(attachment2);
     }
 
@@ -151,7 +151,7 @@ client.on('message', msg => {
         msg.channel.send("@Michal" + "ten szef mnie stworzył 12.01.2021, prosze mi pogratulować na urodziny bo będę smutny <:Dansgame:798296354752430080>");
     } else if (msg.content == ('sto lat')) {
         msg.reply("dziękuje ci bardzo miły człowieku UwU ^.^");
-    } else if (msg.content == ('brek')) {
+    } else if (msg.content == ('widzisz mnie')) {
         const attachment3 = new MessageAttachment('https://cdn.discordapp.com/attachments/389514334943838210/920312845009305681/2x_2.gif');
         msg.channel.send(attachment3);
     } else if (msg.content.includes ("kk")) {
