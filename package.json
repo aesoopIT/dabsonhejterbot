@@ -28,7 +28,7 @@
     "start": "^5.1.0",
     "update": "^0.7.4",
     "weather-js": "^2.0.0",
-    "ytdl-core": "^4.4.4",
+    "ytdl-core": "^4.9.1",
     "ytsearcher": "^1.2.4"
   }
 }
