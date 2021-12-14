@@ -148,14 +148,14 @@ client.on('message', msg => {
     } else if (msg.content == ('mc')) {
         msg.channel.send("@everyone\n\n" + "wbijamy na jakiegoś minecrafta <:co:839941716189773844>");
     } else if (msg.content == ('urodziny')) {
-        msg.channel.send("@Michal" + "ten szef mnie stworzył 12.01.2021, prosze mi pogratulować na urodziny bo będę smutny <:Dansgame:798296354752430080>");
+        msg.channel.send("@Michal" + " ten szef mnie stworzył 12.01.2021, prosze mi pogratulować na urodziny bo będę smutny <:Dansgame:798296354752430080>");
     } else if (msg.content == ('sto lat')) {
         msg.reply("dziękuje ci bardzo miły człowieku UwU ^.^");
     } else if (msg.content.includes ('widzisz mnie')) {
         const attachment3 = new MessageAttachment('https://cdn.discordapp.com/attachments/389514334943838210/920312845009305681/2x_2.gif');
         msg.channel.send(attachment3);
     } else if (msg.content.toLowerCase().startsWith ('powiedz mi fraszke')) {
-        msg.reply.reply(" ty chuju")
+        msg.reply(Context.Message.Author + "  ty chuju")
 
     } else if (msg.content.includes ("kk")) {
         msg.reply("jestem z ciebie rozczarowany <:biblethump:798295427836936222>")
