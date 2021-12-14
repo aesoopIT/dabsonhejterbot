@@ -42,6 +42,8 @@ module.exports = {
         .addField('`władysław`', 'uwusiowo')
         .addField('`widzisz mnie`', 'wiesz co')
         .addField('`powiedz mi fraszke`', 'wiesz co')
+        .addField('`;c`', 'smutek')
+        .addField('``', '')
 
 
         .addField('`kk`', 'sadeg')
