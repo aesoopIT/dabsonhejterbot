@@ -179,11 +179,11 @@ client.on('message', msg => {
     }
 
     let filter = msg => {
-        return msg.content.toLowerCase() == message.content.toLowerCase() && // check if the content is the same (sort of)
-               msg.author == message.author; // check if the author is the same
+        return msg.content.toLowerCase() == msg.content.toLowerCase() && // check if the content is the same (sort of)
+               msg.author == msg.author; // check if the author is the same
       }
     
-      message.channel.awaitMessages(filter, {
+      msg.channel.awaitMessages(filter, {
         maxMatches: 1, // you only need that to happen once
         time: 5 * 1000 // time is in milliseconds
       }).then(collected => {
