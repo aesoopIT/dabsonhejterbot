@@ -129,7 +129,7 @@ client.on('message', msg => {
 
 
     
-    if (msg.content.toLowerCase().startsWith('j')) {
+    if (msg.content == ('jd')) {
         msg.reply("JD kurwe");
     } else if (msg.content.includes ('liga')) {
         msg.channel.send("@everyone\n\n" + " dawac na lige<:komodohype:798193051792179200>");
