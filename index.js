@@ -50,6 +50,7 @@ client.giveawaysManager.on("giveawayReactionRemoved", (giveaway, member, reactio
 
 
 
+
 client.commands= new Discord.Collection();
 
 const prefix = '.';
