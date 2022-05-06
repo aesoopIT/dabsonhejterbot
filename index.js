@@ -121,6 +121,7 @@ client.on("message", async message => {
     }
 });
 
+
 // Jebanie disa   d 
 client.on('message', msg => {
 
