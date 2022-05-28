@@ -122,7 +122,7 @@ client.on("message", async message => {
 });
 
 
-// Jebanie disa   jdjd
+// Jebanie disa   jdjdjd
 client.on('message', msg => {
 
     /* let args = msg.content.substring(prefix.length).split(" ")
