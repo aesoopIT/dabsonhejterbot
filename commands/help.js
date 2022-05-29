@@ -13,11 +13,11 @@ module.exports = {
         .setTitle('Commands with .')
         .addField('`.clear`', 'Myjesz Brud')
         .addField('`.calculate`', 'Policz policz, bo na paluszkach nie potrafisz')
-        //.addField('`.covid`', 'Track the amount of COVID-19 cases')
+        .addField('`.covid`', 'Track the amount of COVID-19 cases')
         .addField('`.weather`', 'Checks weather forecast for provided location')
         .addField('`.meme`', 'Meme dobre jest')
         .addField('`.ascii`', 'Jakiś UwU text')
-        //.addField('`.giveaway`', 'Sprzedajesz dusze')
+        .addField('`.giveaway`', 'Sprzedajesz dusze')
         .addField('`.avatar`', 'Bo ślepi jesteśmy')
 
 
@@ -39,7 +39,7 @@ module.exports = {
         .addField('`mc`', 'mcnota')
         .addField('`urodziny`', '12.01.2021')
         .addField('`sto lat`', 'yez')
-        .addField('`władysław`', 'uwusiowo')
+        .addField('`new world`', 'uwusiowo')
         .addField('`widzisz mnie`', 'wiesz co')
         .addField('`powiedz mi fraszke`', 'wiesz co')
         .addField('`;c`', 'smutek')

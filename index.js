@@ -68,7 +68,7 @@ for (const file of commandFiles) {
 client.on("error", console.error);
 
 client.on('ready', () => {
-    console.log('I am ready');
+    console.log('I am ready zeby ruchac kozy');
 
     console.log("Connected as " + client.user.tag);
 
@@ -93,7 +93,7 @@ client.on("message", async message => {
     }
     if (message.content === ("coco")) {       //co
         message.channel.send("<:co:839941716189773844>");
-    }  else if (message.content.toLowerCase().startsWith ('władysław')) {
+    }  else if (message.content.toLowerCase().startsWith ('NW')) {
         message.channel.send("<:monkaS:810296326557270046> <:monkaS:810296326557270046>");
         const attachment2 = new MessageAttachment('https://cdn.discordapp.com/attachments/389514334943838210/920311693219880990/unknown.png');
         message.channel.send(attachment2);
