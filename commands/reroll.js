@@ -1,4 +1,4 @@
-const ms = require('ms');
+/* const ms = require('ms');
 
 module.exports = {
     name: "reroll",
@@ -28,3 +28,5 @@ module.exports = {
         })
     }
 }
+
+*/

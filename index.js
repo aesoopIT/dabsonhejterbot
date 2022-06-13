@@ -93,11 +93,16 @@ client.on("message", async message => {
     }
     if (message.content === ("coco")) {       //co
         message.channel.send("<:co:839941716189773844>");
-    }  else if (message.content.toLowerCase().startsWith ('NW')) {
+    } 
+
+    if (message.content.toLowerCase().startsWith ('nw')) {       //new world
         message.channel.send("<:monkaS:810296326557270046> <:monkaS:810296326557270046>");
         const attachment2 = new MessageAttachment('https://cdn.discordapp.com/attachments/389514334943838210/920311693219880990/unknown.png');
         message.channel.send(attachment2);
-    }
+        }
+    
+
+    
 
 
 
