@@ -86,7 +86,7 @@ client.on('ready', () => {
 
 client.on("message", async message => {
 
-    if (message.content.toLowerCase().startsWith("komodo")) {       //KOMODO
+    if (message.content.toLowerCase().startsWith("komodo")) {        //KOMODO
         message.channel.send("<:komodohype:798193051792179200>");
         message.channel.send("<:komodohype:798193051792179200>");
         message.channel.send("<:komodohype:798193051792179200>");
@@ -178,7 +178,11 @@ client.on('message', msg => {
 
     } else if (msg.content.includes ("kk")) {
         msg.reply("jestem z ciebie rozczarowany <:biblethump:798295427836936222>")
-    } 
+    } else if (msg.content == ('valheim')) {
+        message.channel.send("@valheimKOKS\n\n" + "Dawac na Valheima suczki <:peepohappy:980513308950016120>");
+
+
+    }
 
     /* if (msg.mentions.members.first()) {
         msg.channel.send( "  ty chuju"); 
