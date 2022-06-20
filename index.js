@@ -175,11 +175,10 @@ client.on('message', msg => {
         msg.channel.send( "<:Sadeg:897588207015850054><:biblethump:798295427836936222>");
 
      
-
     } else if (msg.content.includes ("kk")) {
         msg.reply("jestem z ciebie rozczarowany <:biblethump:798295427836936222>")
     } else if (msg.content == ('valheim')) {
-        message.channel.send("@valheimKOKS\n\n" + "Dawac na Valheima suczki <:peepohappy:980513308950016120>");
+        message.channel.send("@everyone\n\n" + "Dawac na Valheima suczki <:peepohappy:980513308950016120>");
 
 
     }

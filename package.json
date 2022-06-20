@@ -10,6 +10,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "async_hooks": "^1.0.0",
     "avconv": "^3.1.0",
     "discord-giveaways": "^4.4.3",
     "discord.js": "^12.5.1",
