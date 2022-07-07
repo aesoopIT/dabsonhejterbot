@@ -184,7 +184,7 @@ client.on('message', msg => {
     }
 
     /* if (msg.mentions.members.first()) {
-        msg.channel.send( "  ty chuju"); 
+        msg.channel.send( "  ty chuju");  
 
      
 
