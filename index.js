@@ -179,8 +179,9 @@ client.on('message', msg => {
         msg.reply("jestem z ciebie rozczarowany <:biblethump:798295427836936222>")
     } else if (msg.content == ('valheim')) {
         message.channel.send("@everyone\n\n" + "Dawac na Valheima suczki <:peepohappy:980513308950016120>");
-
-
+    } else if (msg.content.toLowerCase().startsWith ('pk')) {
+        const attachment4 = new MessageAttachment('https://discord.com/channels/389514334943838208/389514334943838210/995081590612955246');
+        msg.channel.send(attachment4);
     }
 
     /* if (msg.mentions.members.first()) {
