@@ -171,7 +171,7 @@ client.on('message', msg => {
         msg.channel.send(attachment3);
     } else if (msg.content.toLowerCase().startsWith ('powiedz mi fraszke')) {
         msg.reply( "  ty chuju");
-    } else if (msg.content == (';c')) {
+    } else if (msg.content == (';c' || 'sadge' )) {
         msg.channel.send( "<:Sadeg:897588207015850054><:biblethump:798295427836936222>");
 
      
