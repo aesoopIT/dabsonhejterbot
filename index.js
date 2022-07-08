@@ -180,7 +180,7 @@ client.on('message', msg => {
     } else if (msg.content == ('valheim')) {
         message.channel.send("@everyone\n\n" + "Dawac na Valheima suczki <:peepohappy:980513308950016120>");
     } else if (msg.content.toLowerCase().startsWith ('pk')) {
-        const attachment4 = new MessageAttachment('https://discord.com/channels/389514334943838208/389514334943838210/995081590612955246');
+        const attachment4 = new MessageAttachment('https://media.discordapp.net/attachments/389514334943838210/995081021190053898/801d7807b183b39ab99b4416962a8e6f.jpg?width=478&height=478');
         msg.channel.send(attachment4);
     }
 
