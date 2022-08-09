@@ -74,16 +74,16 @@ client.on('ready', () => {
 
     // Get the channel from its ID
     const logChannel = client.channels.cache.get('389514334943838210')
-    const Dabmian = `<@${258258324280049664}>`
+    const Dabmian = message.guild.members.get('258258324280049664').displayName
     // Send the message
     logChannel.send( Dabmian + 'Widzisz mnie <:Dansgame:798296354752430080>')
 
-    client.guilds.cache.forEach((guild) => {
+    /*client.guilds.cache.forEach((guild) => {
         console.log(guild.name);
         guild.channels.cache.forEach((channel) => {
             console.log(` - ${channel.name} ${channel.type} ${channel.id}`);
         }) 
-    }) 
+    }) */
 });
 
 
