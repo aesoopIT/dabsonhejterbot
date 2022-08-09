@@ -64,7 +64,7 @@ for (const file of commandFiles) {
 
 client.on("error", console.error);
 
-client.on('ready', async () => {
+client.on('ready', () => {
     console.log('I am ready zeby ruchac kozy');
 
     console.log("Connected as " + client.user.tag);
@@ -72,7 +72,10 @@ client.on('ready', async () => {
     client.user.setActivity("Damiana jak sra", {type:"WATCHING"});
 
     channel = client.get_channel(389514334943838210)
-    await channel.send('AUUUU jestem gotów oglądać Damiana jak sra <:komodohype:798193051792179200> <:Dansgame:798296354752430080>')
+    // Get the channel from its ID
+    const logChannel = client.channels.cache.get('389514334943838210')
+    // Send the message
+    logChannel.send('AUUUU jestem gotów oglądać Damiana jak sra <:komodohype:798193051792179200> <:Dansgame:798296354752430080>')
 
     client.guilds.cache.forEach((guild) => {
         console.log(guild.name);
@@ -121,10 +124,6 @@ client.on("message", async message => {
         const attachment2 = new MessageAttachment('https://cdn.discordapp.com/attachments/389514334943838210/920311693219880990/unknown.png');
         message.channel.send(attachment2);
     }
-    
-    channel = client.get_channel(389514334943838210)
-    await channel.send('AUUUU jestem gotów oglądać Damiana jak sra <:komodohype:798193051792179200> <:Dansgame:798296354752430080>')
-
     
 
 
