@@ -174,6 +174,7 @@ client.on('message', msg => {
     } else if (msg.content == (';c' || 'sadeg' )) {
         msg.channel.send( "<:Sadeg:897588207015850054><:biblethump:798295427836936222>");
 
+        
      
     } else if (msg.content.includes ("kk")) {
         msg.reply("jestem z ciebie rozczarowany <:biblethump:798295427836936222>")
