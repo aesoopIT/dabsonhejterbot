@@ -71,6 +71,12 @@ client.on('ready', () => {
 
     client.user.setActivity("Damiana jak sra", {type:"WATCHING"});
 
+    //const logChannel = client.channels.cache.get('389514334943838210')
+    // const Dabmian = message.guild.members.get('258258324280049664').displayName
+    // Send the message
+    //logChannel.send( message.guild.members.get('258258324280049664').displayName + 'Widzisz mnie <:Dansgame:798296354752430080>')
+
+
 
     /*client.guilds.cache.forEach((guild) => {
         console.log(guild.name);
@@ -104,13 +110,6 @@ client.on('presenceUpdate', (oldPresence, newPresence) => {
 //-------------------------------------------------------------------------------------------------
 
 client.on("message", async message => {
-
-    // Get the channel from its ID
-    const logChannel = client.channels.cache.get('389514334943838210')
-    // const Dabmian = message.guild.members.get('258258324280049664').displayName
-    // Send the message
-    logChannel.send( message.guild.members.get('258258324280049664').displayName + 'Widzisz mnie <:Dansgame:798296354752430080>')
-
 
 
     if (message.content.toLowerCase().startsWith("komodo")) {        //KOMODO
