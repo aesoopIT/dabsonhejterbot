@@ -67,7 +67,7 @@ for (const file of commandFiles) {
 
 client.on("error", console.error);
 
-client.on('ready', () => {
+client.on('ready', async () => {
     console.log('I am ready zeby ruchac kozy');
 
     console.log("Connected as " + client.user.tag);
@@ -82,10 +82,14 @@ client.on('ready', () => {
         guild.channels.cache.forEach((channel) => {
             console.log(` - ${channel.name} ${channel.type} ${channel.id}`);
         }) 
-}) 
-
+    }) 
 });
 
+
+
+
+
+//-------------------------------------------------------------------------------------------------
 
 client.on("message", async message => {
 
