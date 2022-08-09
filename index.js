@@ -71,11 +71,11 @@ client.on('ready', () => {
 
     client.user.setActivity("Damiana jak sra", {type:"WATCHING"});
 
-    
+
     // Get the channel from its ID
     const logChannel = client.channels.cache.get('389514334943838210')
     // Send the message
-    logChannel.send('AUUUU jestem gotów oglądać Damiana jak sra <:komodohype:798193051792179200> <:Dansgame:798296354752430080>')
+    logChannel.send(`<@${258258324280049664}>`+'<:Dansgame:798296354752430080>')
 
     client.guilds.cache.forEach((guild) => {
         console.log(guild.name);
@@ -96,7 +96,7 @@ client.on('presenceUpdate', (oldPresence, newPresence) => {
     if (newPresence.status !== 'online') return;
   
     try {
-      client.channels.cache.get('channel_id').send('HELLO');
+      client.channels.cache.get('389514334943838210').send('Witam');
     } catch (error) {
       console.log(error);
     }
