@@ -74,6 +74,9 @@ client.on('ready', () => {
 
     client.user.setActivity("Damiana jak sra", {type:"WATCHING"});
 
+    channel = clinet.get_channel(389514334943838210)
+    await channel.send('AUUUU jestem gotów oglądać Damiana jak sra <:komodohype:798193051792179200> <:Dansgame:798296354752430080>')
+
     client.guilds.cache.forEach((guild) => {
         console.log(guild.name);
         guild.channels.cache.forEach((channel) => {
