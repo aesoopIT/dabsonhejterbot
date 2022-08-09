@@ -71,6 +71,7 @@ client.on('ready', () => {
 
     client.user.setActivity("Damiana jak sra", {type:"WATCHING"});
 
+    
     // Get the channel from its ID
     const logChannel = client.channels.cache.get('389514334943838210')
     // Send the message
