@@ -1,6 +1,8 @@
 const Discord = require('discord.js');
 
-const client = new Discord.Client();
+const client = new Discord.Client({
+    intents: ['GUILDS', 'GUILD_MESSAGES', 'GUILD_PRESENCES'],
+  });
 client.options.http.api = "https://discord.com/api"       // reaparing UnhandledPromiseRejectionWarning: Error: Status code: 429
 
 const { Client, MessageAttachment } = require('discord.js');
@@ -46,11 +48,6 @@ client.giveawaysManager.on("giveawayReactionRemoved", (giveaway, member, reactio
 
 
 
-
-
-
-
-
 client.commands= new Discord.Collection();
 
 const prefix = '.';
@@ -74,7 +71,7 @@ client.on('ready', async () => {
 
     client.user.setActivity("Damiana jak sra", {type:"WATCHING"});
 
-    channel = clinet.get_channel(389514334943838210)
+    channel = client.get_channel(389514334943838210)
     await channel.send('AUUUU jestem gotów oglądać Damiana jak sra <:komodohype:798193051792179200> <:Dansgame:798296354752430080>')
 
     client.guilds.cache.forEach((guild) => {
@@ -83,6 +80,23 @@ client.on('ready', async () => {
             console.log(` - ${channel.name} ${channel.type} ${channel.id}`);
         }) 
     }) 
+});
+
+
+
+client.on('presenceUpdate', (oldPresence, newPresence) => {
+    // if someone else has updated their status, just return
+    if (newPresence.userId !== 'person_id') return;
+    // if it's not the status that has changed, just return
+    if (oldPresence.status === newPresence.status) return;
+    // of if the new status is not online, again, just return
+    if (newPresence.status !== 'online') return;
+  
+    try {
+      client.channels.cache.get('channel_id').send('HELLO');
+    } catch (error) {
+      console.log(error);
+    }
 });
 
 
@@ -106,8 +120,10 @@ client.on("message", async message => {
         message.channel.send("<:monkaS:810296326557270046> <:monkaS:810296326557270046>");
         const attachment2 = new MessageAttachment('https://cdn.discordapp.com/attachments/389514334943838210/920311693219880990/unknown.png');
         message.channel.send(attachment2);
-        }
+    }
     
+    channel = client.get_channel(389514334943838210)
+    await channel.send('AUUUU jestem gotów oglądać Damiana jak sra <:komodohype:798193051792179200> <:Dansgame:798296354752430080>')
 
     
 
