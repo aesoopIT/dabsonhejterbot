@@ -67,12 +67,6 @@ for (const file of commandFiles) {
 
 client.on("error", console.error);
 
-client.on('guildCreate', guild => {
-    guild.systemChannel.send(`Siema, oglądamy daje Damiana jak sra <:komodohype:798193051792179200>`)
-    const channel = guild.channels.cache.find(channel => channel.type === 'text' && channel.permissionsFor(guild.me).has('SEND_MESSAGES'))
-    channel.send("Dzięki za zapro, a więc gdzie jest wasz Damian?")
-  });
-
 client.on('ready', () => {
     console.log('I am ready zeby ruchac kozy');
 
@@ -80,12 +74,12 @@ client.on('ready', () => {
 
     client.user.setActivity("Damiana jak sra", {type:"WATCHING"});
 
-   /* client.guilds.cache.forEach((guild) => {
+    client.guilds.cache.forEach((guild) => {
         console.log(guild.name);
         guild.channels.cache.forEach((channel) => {
             console.log(` - ${channel.name} ${channel.type} ${channel.id}`);
         }) 
-}) */
+}) 
 
 });
 
