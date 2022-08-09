@@ -74,9 +74,9 @@ client.on('ready', () => {
 
     // Get the channel from its ID
     const logChannel = client.channels.cache.get('389514334943838210')
-    const Dabmian = message.guild.members.get('258258324280049664').displayName
+    // const Dabmian = message.guild.members.get('258258324280049664').displayName
     // Send the message
-    logChannel.send( Dabmian + 'Widzisz mnie <:Dansgame:798296354752430080>')
+    logChannel.send( message.guild.members.get('258258324280049664').displayName + 'Widzisz mnie <:Dansgame:798296354752430080>')
 
     /*client.guilds.cache.forEach((guild) => {
         console.log(guild.name);
@@ -90,14 +90,14 @@ client.on('ready', () => {
 
 client.on('presenceUpdate', (oldPresence, newPresence) => {
     // if someone else has updated their status, just return
-    if (newPresence.userId !== 'person_id') return;
+    if (newPresence.userId !== '258258324280049664') return;
     // if it's not the status that has changed, just return
     if (oldPresence.status === newPresence.status) return;
     // of if the new status is not online, again, just return
     if (newPresence.status !== 'online') return;
   
     try {
-      client.channels.cache.get('389514334943838210').send('Witam');
+      client.channels.cache.get('389514334943838210').send('Witam witam, jak tam na kibelku?');
     } catch (error) {
       console.log(error);
     }
