@@ -67,6 +67,10 @@ for (const file of commandFiles) {
 
 client.on("error", console.error);
 
+client.on('guildCreate', guild => {
+    guild.systemChannel.send(`Siema, oglądamy daje Damiana jak sra <:komodohype:798193051792179200>`)
+  });
+
 client.on('ready', () => {
     console.log('I am ready zeby ruchac kozy');
 
@@ -74,12 +78,12 @@ client.on('ready', () => {
 
     client.user.setActivity("Damiana jak sra", {type:"WATCHING"});
 
-    /* client.guilds.cache.forEach((guild) => {
+    client.guilds.cache.forEach((guild) => {
         console.log(guild.name);
         guild.channels.cache.forEach((channel) => {
             console.log(` - ${channel.name} ${channel.type} ${channel.id}`);
         })
-}) */
+}) 
 
 });
 
@@ -174,7 +178,7 @@ client.on('message', msg => {
     } else if (msg.content == (';c' || 'sadeg' )) {
         msg.channel.send( "<:Sadeg:897588207015850054><:biblethump:798295427836936222>");
 
-        
+
      
     } else if (msg.content.includes ("kk")) {
         msg.reply("jestem z ciebie rozczarowany <:biblethump:798295427836936222>")
