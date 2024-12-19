@@ -22,6 +22,7 @@ var firstName = "Dabson";
 var lastName = "Hejter";
 
 /*
+OUTDATED
 // Init discord giveaways
 const { GiveawaysManager } = require('discord-giveaways');
 const { i } = require('mathjs');
@@ -35,7 +36,6 @@ client.giveawaysManager = new GiveawaysManager(client, {
         reaction: config.reaction
     }
 });
-// We now have a client.giveawaysManager property to manage our giveaways! 
 
 client.giveawaysManager.on("giveawayReactionAdded", (giveaway, member, reaction) => {
     console.log(`${member.user.tag} entered giveaway #${giveaway.messageID} (${reaction.emoji.name})`);
@@ -51,7 +51,7 @@ client.giveawaysManager.on("giveawayReactionRemoved", (giveaway, member, reactio
 client.commands= new Discord.Collection();
 
 const prefix = '.';
-//Prefix can be changed. It doesn't have to be ! or ;
+//Prefix can be changed.
 
 
 const commandFiles = readdirSync(join(__dirname, "commands")).filter(file => file.endsWith(".js"));
@@ -78,12 +78,14 @@ client.on('ready', () => {
 
 
 
-    /*client.guilds.cache.forEach((guild) => {
+    /*
+    client.guilds.cache.forEach((guild) => {
         console.log(guild.name);
         guild.channels.cache.forEach((channel) => {
             console.log(` - ${channel.name} ${channel.type} ${channel.id}`);
         }) 
-    }) */
+    }) 
+    */
 });
 
 
@@ -151,7 +153,7 @@ client.on("message", async message => {
 });
 
 
-// Jebanie disa   jdjdjddd
+// Jeb disa   jdjdjddd
 client.on('message', msg => {
 
     /* let args = msg.content.substring(prefix.length).split(" ")
@@ -161,7 +163,7 @@ client.on('message', msg => {
 
     
     if (msg.content == ('jd')) {
-        msg.reply("JD kurwe");
+        msg.reply("JD k");
     } else if (msg.content.includes ('liga')) {
         msg.channel.send("@everyone\n\n" + " dawac na lige<:komodohype:798193051792179200>");
         /* } else if (msg.content.toLowerCase().startsWith('liga')) {
@@ -233,7 +235,7 @@ const ytdl = require('ytdl-core');
 const { YTSearcher } = require('ytsearcher');
 
 const searcher = new YTSearcher({
-    key: "AIzaSyByk4l0UNWOSjKBbDGtkAMztU15Shj8_jU",
+    key: "keyYT",
     revealed: true
 });
 
